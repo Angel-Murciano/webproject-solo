@@ -1,0 +1,99 @@
+@font-face{
+    /* Custom definition of font, search in cache if already downloaded, if not, obtain it from the files*/
+    font-family: "Archivo Black";
+    src: 
+    local('ArchivoBlack-Regular.ttf'),
+    url(../fonts/ArchivoBlack-Regular.ttf);
+    font-family: sans-serif;
+}
+
+:root{
+    --main-color: #14A525;
+    --secondary-color: rgb(6, 174, 6);
+    --button-hover: #40c425;
+    --nav-size: 250px;
+    --expand-color: green;
+    --center-nav-size: calc(var(--nav-size) / 2);
+}
+
+header{
+    background-color: white;
+    position: absolute;
+    left: 40%;
+}
+
+nav{
+    background-color: var(--expand-color);
+    align-items: left;
+    position: fixed;
+    width: var(--nav-size);
+    height: 100%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    left: 0%;
+    top: 0%;
+}
+
+nav h2{
+    color: black;
+    text-align: center;
+    border: 5px solid var(--secondary-color);
+    background: #39A80D;
+    background: linear-gradient(90deg, rgba(57, 168, 13, 1) 0%, rgba(38, 222, 38, 1) 50%, rgba(87, 255, 20, 1) 100%);
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 0px 30px 5px 0px;
+    font-family: "Archivo Black";
+    margin-bottom: 10%;
+}
+
+nav li{
+    color: white;
+    font-family: "Archivo Black";
+    font-size: 16px;
+    margin-top: 7.5%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+nav ul hr{
+    border-style: solid;
+    border: 1px solid black;
+    margin-right: 30px;
+}
+
+main{
+    background-color: var(--main-color);
+    margin-left: var(--nav-size);
+}
+
+footer{
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.button-expand{
+    align-self: center;
+}
+
+/* .botonComprar {
+  border: 5px solid var(--main-color);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--main-color);
+  color: black;
+  font-weight: normal;
+  opacity: 1;
+  transition: 0.4s;
+}
+.botonComprar:hover {
+  cursor: pointer; 
+  background-color: var(--button-hover);
+  opacity: 1;
+  transition: 0.4s;
+  color: black;
+} */
