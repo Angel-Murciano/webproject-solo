@@ -15,6 +15,22 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html')); // index.html por defecto, ya le colocaré algo más tarde
 });
 
+// Ruta de login
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/login.html'));
+});
+
+// Ruta de registro
+app.get('/register', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/register.html'));
+});
+
+// Pagina de error en cuanto se intente entrar en una pagina no existente
+app.use((req, res, next) => {
+  res.status(404).sendFile(path.join(__dirname, '../frontend/error.html'));
+});
+
+// Aviso de que el server anda corriendo en la consola
 app.listen(PORT, () => {
-  console.log(`Servidor backend corriendo en http://localhost:${PORT}`); // Aviso de que el server anda corriendo en la consola
+  console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
 });
