@@ -9,43 +9,69 @@
     <link rel="stylesheet" href="css/bootstrap-customization.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Mercadona</title>
+    <title>Preent</title>
 </head>
 
-<body>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col" id="logo"></div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col">
-                <button type="button" class="btn btn-primary">Ofertas</button>
-                <button type="button" class="btn btn-primary">Categorias</button>
-                <button type="button" class="btn btn-primary">Atención al cliente</button>
+<body class="color-gradiente-azul-suave">
+    <div class="container-fluid">
+
+        <!-- Logo and company name with slogan -->
+        <div class="row presentation-w-image mx-auto mt-0">
+            <div class="col-5 my-auto d-flex justify-content-end" id="logo">
+                <!-- loadLogo.js already takes care of placing the image here. -->
             </div>
-            <div class="col-1" id="usuario">Imagen usuario</div>
+            <div class="col justify-content-start fst-italic my-5 texto-gradiente">
+                <h1 class="display-1 fw-semibold ">Preent</h1>
+                <p class="fs-2 fw-medium">You matter to us... Because it's you.</p>
+            </div>
         </div>
-        <div class="row">
-            <div class="carousel slide col" id="carrusel-ofertas" data-bs-interval="3000" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="w-25" src="images/logo.png" alt="Primera oferta">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-25" src="images/logo.png" alt="Segunda oferta">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-25" src="images/logo.png" alt="Tercera oferta">
-                    </div>
+
+        <!-- Navigation area -->
+        <div class="row justify-content-center p-2">
+            <div class="col">
+                <div class="btn-group w-100" role="group">
+                    <button type="button" class="btn btn-lg btn-info flex-fill rounded-start-pill">Sobre
+                        nosotros</button>
+                    <button type="button" class="btn btn-lg btn-info flex-fill">¿Qué te puede ofrecer Preent?</button>
+                    <button type="button" class="btn btn-lg btn-info flex-fill rounded-end-pill">Contáctanos</button>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col" id="categorias">Categorias</div>
+
+        <section class="container my-5">
+            <div class="row align-items-center">
+
+                <!-- Imagen del producto -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="ruta-de-tu-imagen.jpg" alt="Producto" class="img-fluid rounded">
+                </div>
+
+                <!-- Información del producto -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Nombre de tu producto</h2>
+                    <p class="lead mb-4">
+                        Aquí puedes describir tu producto de manera breve y atractiva. Explica sus beneficios,
+                        funcionalidades
+                        o lo que lo hace especial frente a la competencia.
+                    </p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">✔ Característica destacada 1</li>
+                        <li class="mb-2">✔ Característica destacada 2</li>
+                        <li class="mb-2">✔ Característica destacada 3</li>
+                    </ul>
+                    <a href="#comprar" class="btn btn-primary btn-lg">Descúbrelo</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="row reserved-rights">
+            <p class="fs-5 mb-0">
+                &copy; Ángel Murciano Baena. All rights reserved.
+            </p>
         </div>
-        <div class="row">
-            <div class="col" id="sobre-nosotros">Sobre nosotros</div>
-        </div>
+
     </div>
 </body>
 

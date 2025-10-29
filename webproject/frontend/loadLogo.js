@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const url = URL.createObjectURL(blob);
         const img = document.createElement('img');
         img.src = url;
-        img.alt = 'logo-mercadona';
+        img.alt = 'logo';
+        img.style.height = "200px";
+        img.style.mixBlendMode = 'screen';
         document.getElementById('logo').appendChild(img);
     })
 });
