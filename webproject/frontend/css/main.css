@@ -6,7 +6,9 @@
         url(../fonts/ArchivoBlack-Regular.ttf);
 }
 
+
 .color-gradiente-azul-suave {
+    height: 100vh;
   background: linear-gradient(180deg, #a2d2f7 0%, #4a90e2 50%, #1b3b6f 100%);
 }
 

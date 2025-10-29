@@ -13,8 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = document.createElement('img');
         img.src = url;
         img.alt = 'logo';
-        img.style.height = "200px";
+        img.style.width = "300px";
+        img.style.height = "auto";
         img.style.mixBlendMode = 'screen';
+        img.className = 'img-fluid';
         document.getElementById('logo').appendChild(img);
     })
 });
